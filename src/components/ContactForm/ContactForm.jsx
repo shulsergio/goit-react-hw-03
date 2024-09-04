@@ -35,15 +35,14 @@ export default function ContactForm({ onAddContact }) {
     <Formik
       initialValues={initialValues}
       validationSchema={validationSchema}
-      onSubmit={(values, actions) => handleSubmit(values, actions, onAddContact)}
-    >
+      onSubmit={(values, actions) => handleSubmit(values, actions, onAddContact)}>
       <Form className={css.classBox}>
         <div className={css.inputBlock}>
           <label htmlFor="name">Name</label>
           <Field type="text" name="name" />
+
           <ErrorMessage name="name" component="div" className={css.error} />
         </div>
-
         <div className={css.inputBlock}>
           <label htmlFor="number">Number</label>
           <Field type="text" name="number" />
