@@ -1,5 +1,14 @@
+.SearchBox{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
 .label{
     font-size: 14px;
     font-weight: normal;
     margin: 0;
+}
+.SearchBox input{
+    width: 242px;
 }
